@@ -70,6 +70,8 @@ security:
     - testAuth : []
 ```
 
+&nbsp;
+
 ### Security field does not contain any item
 
 | Severity | Issue description | Possible fix |
@@ -86,6 +88,8 @@ security:
     - testAuth : []
 ```
 
+&nbsp;
+
 ### Security field does not contain any scheme
 
 | Severity | Issue description | Possible fix |
@@ -101,6 +105,8 @@ paths:
 security:
     - testAuth : []
 ```
+
+&nbsp;
 
 ### Scope for OAuth scheme used in security field not defined in the securityScheme declaration
 
@@ -126,6 +132,8 @@ components:
             write: write objects to your account
 ```
 
+&nbsp;
+
 ## Reusable security schemes are not defined within components
 
 ### Security scheme object not defined
@@ -143,6 +151,8 @@ components:
       type: http
       scheme: basic
 ```
+
+&nbsp;
 
 ## Security field for an individual operation should properly enforce security
 
@@ -162,6 +172,8 @@ paths:
       - testAuth : []
 ```
 
+&nbsp;
+
 ### Security field for the operation does not contain any scheme
 
 | Severity | Issue description | Possible fix |
@@ -177,6 +189,8 @@ paths:
       security:
       - testAuth : []
 ```
+
+&nbsp;
 
 ### Operation does not enforce any security scheme
 
@@ -194,6 +208,8 @@ paths:
       security:
           - testAuth : []
 ```
+
+&nbsp;
 
 ### Scope for OAuth scheme used not defined in the securityScheme declaration
 
@@ -224,6 +240,8 @@ components:
             write: write objects to your account
 ```
 
+&nbsp;
+
 ## Global server configuration allows insecure enforcement of security schemes
 
 ### API accepts credentials from OAuth authentication in plain text
@@ -250,6 +268,8 @@ security:
       - read
 ```
 
+&nbsp;
+
 ### API accepts auth credentials in plain text
 
 | Severity | Issue description | Possible fix |
@@ -272,6 +292,8 @@ components:
 security:
   - apiAuth: []
 ```
+
+&nbsp;
 
 ### Global server URL uses HTTP protocol
 
@@ -297,6 +319,8 @@ security:
       - read
 ```
 
+&nbsp;
+
 ### API accepts credentials from OpenID Connect authentication in plain text
 
 | Severity | Issue description | Possible fix |
@@ -320,6 +344,8 @@ security:
       - write
       - read
 ```
+
+&nbsp;
 
 ## Server configuration of the operation allows insecure enforcement of security schemes
 
@@ -345,6 +371,8 @@ paths:
         description: API server
 ```
 
+&nbsp;
+
 ### Operation accepts authentication credentials in plain text
 
 | Severity | Issue description | Possible fix |
@@ -367,6 +395,8 @@ paths:
         description: API server
 ```
 
+&nbsp;
+
 ### Server URL of the operation is using HTTP protocol
 
 | Severity | Issue description | Possible fix |
@@ -381,6 +411,8 @@ get:
   servers:
     - url: https://my.api.example.com/
 ```
+
+&nbsp;
 
 ### Operation accepts credentials from OpenID Connect authentication as plain text
 
@@ -405,6 +437,8 @@ paths:
         description: API server
 ```
 
+&nbsp;
+
 ## Security scheme configuration allows loopholes for credential leaks
 
 ### Authorization URL uses HTTP protocol. Credentials will be transferred as plain text
@@ -425,6 +459,8 @@ components:
             authorizationUrl: https://my.auth.example.com/
 ```
 
+&nbsp;
+
 ### Token URL uses HTTP protocol
 
 | Severity | Issue description | Possible fix |
@@ -442,3 +478,5 @@ components:
           authorizationCode:
             tokenUrl: https://my.token.example.com/
 ```
+
+&nbsp;
