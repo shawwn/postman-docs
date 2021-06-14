@@ -62,7 +62,7 @@ The following list describes possible warning messages and potential ways to res
 
 **Resolution:**
 
-```yaml
+```
 openapi: 3.0.0
 info:
 paths:
@@ -80,7 +80,7 @@ security:
 
 **Resolution:**
 
-```yaml
+```
 openapi: 3.0.0
 info:
 paths:
@@ -98,7 +98,7 @@ security:
 
 **Resolution:**
 
-```yaml
+```
 openapi: 3.0.0
 info:
 paths:
@@ -116,7 +116,7 @@ security:
 
 **Resolution:**
 
-```yaml
+```
 security:
   - OAuth2:
     - read
@@ -144,7 +144,7 @@ components:
 
 **Resolution:**
 
-```yaml
+```
 components:
   securitySchemes:
     testAuth:
@@ -164,7 +164,7 @@ components:
 
 **Resolution:**
 
-```yaml
+```
 paths:
   /user:
     get:
@@ -182,7 +182,7 @@ paths:
 
 **Resolution:**
 
-```yaml
+```
 paths:
   /user:
     get:
@@ -200,7 +200,7 @@ paths:
 
 **Resolution:**
 
-```yaml
+```
   /user:
     get:
       tags:
@@ -219,7 +219,7 @@ paths:
 
 **Resolution:**
 
-```yaml
+```
 paths:
   "/user":
     get:
@@ -252,7 +252,7 @@ components:
 
 **Resolution:**
 
-```yaml
+```
 servers:
   - url: https://my.api.example.com/
     description: API server
@@ -278,7 +278,7 @@ security:
 
 **Resolution:**
 
-```yaml
+```
 servers:
   - url: https://my.api.example.com/
     description: API server
@@ -303,7 +303,7 @@ security:
 
 **Resolution:**
 
-```yaml
+```
 servers:
   - url: https://my.api.example.com/
     description: API server
@@ -329,7 +329,7 @@ security:
 
 **Resolution**:
 
-```yaml
+```
 servers:
   - url: https://my.api.example.com/
     description: API server
@@ -357,7 +357,7 @@ security:
 
 **Resolution:**
 
-```yaml
+```
 components:
   securitySchemes:
     OAuth2:
@@ -381,7 +381,7 @@ paths:
 
 **Resolution:**
 
-```yaml
+```
 components:
   securitySchemes:
     ApikeyAuth:
@@ -405,7 +405,7 @@ paths:
 
 **Resolution:**
 
-```yaml
+```
 get:
   operationId: getPetsById
   servers:
@@ -422,7 +422,7 @@ get:
 
 **Resolution**:
 
-```yaml
+```
 components:
   securitySchemes:
     OpenIdScheme:
@@ -449,7 +449,7 @@ paths:
 
 **Resolution:**
 
-```yaml
+```
 components:
   securitySchemes:
      OauthScheme:
@@ -469,7 +469,7 @@ components:
 
 **Resolution:**
 
-```yaml
+```
 components:
   securitySchemes:
      OauthScheme:
