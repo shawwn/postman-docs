@@ -3,7 +3,7 @@ title: "Security Warnings"
 order: 116
 page_id: "security_warnings"
 warning: false
-search_keyword: "api schema, security warnings, schema validation, api security, security validation"
+search_keyword: "api security, security warnings, schema validation, security validation"
 
 ---
 
