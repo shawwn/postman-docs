@@ -22,7 +22,7 @@
   h2::before, 
   h3::before, 
   h4::before { 
-    display: block; 
+    display: block !important; 
     content: " "; 
     margin-top: -56px; 
     height: 56px; 
